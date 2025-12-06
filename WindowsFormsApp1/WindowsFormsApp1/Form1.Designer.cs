@@ -30,14 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtpassword = new System.Windows.Forms.Label();
             this.txtmatkhau = new System.Windows.Forms.TextBox();
+            this.btnlogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(149, 58);
+            this.label1.Location = new System.Drawing.Point(149, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 16);
             this.label1.TabIndex = 0;
@@ -46,34 +47,44 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(307, 55);
+            this.txtUserName.Location = new System.Drawing.Point(307, 80);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(225, 22);
+            this.txtUserName.Size = new System.Drawing.Size(280, 22);
             this.txtUserName.TabIndex = 1;
             // 
-            // label2
+            // txtpassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Mat Khau";
+            this.txtpassword.AutoSize = true;
+            this.txtpassword.Location = new System.Drawing.Point(149, 132);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(67, 16);
+            this.txtpassword.TabIndex = 2;
+            this.txtpassword.Text = "Password";
             // 
             // txtmatkhau
             // 
-            this.txtmatkhau.Location = new System.Drawing.Point(307, 101);
+            this.txtmatkhau.Location = new System.Drawing.Point(307, 126);
             this.txtmatkhau.Name = "txtmatkhau";
-            this.txtmatkhau.Size = new System.Drawing.Size(225, 22);
+            this.txtmatkhau.Size = new System.Drawing.Size(280, 22);
             this.txtmatkhau.TabIndex = 3;
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.Location = new System.Drawing.Point(487, 191);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(100, 26);
+            this.btnlogin.TabIndex = 4;
+            this.btnlogin.Text = "login";
+            this.btnlogin.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtmatkhau);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -87,8 +98,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label txtpassword;
         private System.Windows.Forms.TextBox txtmatkhau;
+        private System.Windows.Forms.Button btnlogin;
     }
 }
 
